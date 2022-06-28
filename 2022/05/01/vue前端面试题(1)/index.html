@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="学习react之前需要先掌握什么技能？, Hexo">
-    <meta name="description" content="react 学习需要掌握些什么？1.html、css2.js基础、es6基础3.原型4.类构造器5.箭头函数6.数组的常用方法7.js模块化8.数据类型9….
-">
+    <meta name="keywords" content="vue前端高频面试题（1）？, Hexo">
+    <meta name="description" content="三种开发模式？mvc mvp mvvm模式mvc是应用最广泛的软件架构之一，mvc分为Model（模型）、Controller（控制器）、View（视图）
+这主要就是基于分层的目的，让彼此的职责分开。View一般通过controller来和">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@
 
     
 
-    <title>学习react之前需要先掌握什么技能？ | Hexo</title>
+    <title>vue前端高频面试题（1）？ | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">学习react之前需要先掌握什么技能？</h1>
+                    <h1 class="description center-align post-title">vue前端高频面试题（1）？</h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-06-21
+                    2022-05-01
                 </div>
                 
 
@@ -464,7 +464,46 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="react-学习需要掌握些什么？"><a href="#react-学习需要掌握些什么？" class="headerlink" title="react 学习需要掌握些什么？"></a>react 学习需要掌握些什么？</h3><p>1.html、css<br>2.js基础、es6基础<br>3.原型<br>4.类构造器<br>5.箭头函数<br>6.数组的常用方法<br>7.js模块化<br>8.数据类型<br>9….</p>
+                <h3 id="三种开发模式？"><a href="#三种开发模式？" class="headerlink" title="三种开发模式？"></a>三种开发模式？</h3><h4 id="mvc-mvp-mvvm模式"><a href="#mvc-mvp-mvvm模式" class="headerlink" title="mvc mvp mvvm模式"></a>mvc mvp mvvm模式</h4><p><strong>mvc</strong>是应用最广泛的软件架构之一，mvc分为Model（模型）、Controller（控制器）、View（视图）</p>
+<p>这主要就是基于分层的目的，让彼此的职责分开。View一般通过controller来和Model进行练习。</p>
+<p>controller是Model和view的协调者，View和Model不直接联系。基本练习都是单向的。</p>
+<p><img src="C:\Users\刘\AppData\Roaming\Typora\typora-user-images\image-20220628083139353.png" alt="image-20220628083139353"></p>
+<h5 id="工作流程："><a href="#工作流程：" class="headerlink" title="工作流程："></a>工作流程：</h5><p>View传送指令到Controller</p>
+<p>Controller完成业务逻辑后，要求Model改变状态</p>
+<p>Model将新的数据发送到View，用户得到反馈</p>
+<hr>
+<p><strong>Mvp</strong>模式将Controller改成了Presenter，同时也改变了通信方向。</p>
+<p><img src="C:\Users\刘\AppData\Roaming\Typora\typora-user-images\image-20220628083546243.png" alt="image-20220628083546243"></p>
+<h5 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h5><p>MVVM是把MVC的Controller和MVP的Presenter改成了ViewModel。</p>
+<p>MVVM的开发模式也是我们vue使用的开发模式。</p>
+<p>view的变化自动更新到viewModel，viewModel的变化会自动融不到view上显示。这种自动同步是因为viewModel中的属性实现了Observer，当属性变更时都能触发对应的操作。</p>
+<p><img src="C:\Users\刘\AppData\Roaming\Typora\typora-user-images\image-20220628083827320.png" alt="image-20220628083827320"></p>
+<h3 id="MVVM模式的优点以及与MVC模式的区别？"><a href="#MVVM模式的优点以及与MVC模式的区别？" class="headerlink" title="MVVM模式的优点以及与MVC模式的区别？"></a>MVVM模式的优点以及与MVC模式的区别？</h3><h5 id="首先先来说一下MVVM模式的优点："><a href="#首先先来说一下MVVM模式的优点：" class="headerlink" title="首先先来说一下MVVM模式的优点："></a>首先先来说一下MVVM模式的优点：</h5><p>1）低耦合</p>
+<p>2）可重用性</p>
+<p>3）独立开发</p>
+<p>4）可测试</p>
+<h5 id="MVVM和MVC的区别："><a href="#MVVM和MVC的区别：" class="headerlink" title="MVVM和MVC的区别："></a>MVVM和MVC的区别：</h5><p>他俩的区别其实并不大，都是一种设计思想</p>
+<p>他俩的主要区别在于</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mvc中的Controller演变成了mvvm中的viewModel</span><br><span class="line">mvvm通过数据显示视图层而不是节点操作</span><br><span class="line">mvvm主要解决了：mvc中大量的DOM操作使用页面渲染性能降低，加载速度慢，影响用户体验</span><br></pre></td></tr></table></figure>
+
+<h3 id="常见的实现MVVM数据绑定的做法有哪些？"><a href="#常见的实现MVVM数据绑定的做法有哪些？" class="headerlink" title="常见的实现MVVM数据绑定的做法有哪些？"></a>常见的实现MVVM数据绑定的做法有哪些？</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">发布者-订阅者模式（backbone.js）</span><br><span class="line">脏值检查（angular.js）</span><br><span class="line">数据戒指（vue.js）</span><br></pre></td></tr></table></figure>
+
+<p><strong>发布者-订阅者模式：</strong></p>
+<p>一般通过sub，pub的方式实现数据和视图的绑定监听</p>
+<p>更新数据的通常做法是vm.set(‘property’, value)</p>
+<p>这种方式现在毕竟太low了，我们更希望通过vm.property&#x3D;value，对象的形式来更新数据，同时还自动更新视图，于是就有了下面两种方式。</p>
+<hr>
+<p><strong>脏值检查：</strong></p>
+<p>angular.js是通过脏值检测的方式比对数据是否有变更，来决定是否更新视图。</p>
+<p>最简单的方式就是通过setinterval（）定时器定时轮询检测数据的变动，</p>
+<p>angular只有在置顶的事件触发时进入脏值检测，大致如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1、DOM事件，比如用户输入文本，点击按钮等</span><br><span class="line">2、XHR响应事件</span><br><span class="line">3、浏览器Location变更事件</span><br><span class="line">3、Timer事件（定时器）</span><br><span class="line">执行 $digest() 或 $apply()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>数据劫持：</strong></p>
+<p>vue.js则是采用数据劫持结合发布者订阅者模式的方式</p>
+<p>通过Object.defineProperty()来劫持各个属性的setter，getter，</p>
+<p>在数据变动时发布消息给订阅者，触发相应的监听回调。</p>
 
                 
             </div>
@@ -491,7 +530,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/06/21/demo/">http://example.com/2022/06/21/demo/</a>
+                    <a href="http://example.com/2022/05/01/vue%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98(1)/">http://example.com/2022/05/01/vue%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98(1)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -704,13 +743,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/06/22/react%E5%BC%80%E5%A7%8B%E5%92%8Cjsx%E8%AF%AD%E6%B3%95/">
+                <a href="/2022/05/12/%E5%89%8D%E7%AB%AF%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="react开始">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="前端高频面试题">
                         
-                        <span class="card-title">react开始</span>
+                        <span class="card-title">前端高频面试题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -721,7 +760,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-12
                         </span>
                         <span class="publish-author">
                             
@@ -738,16 +777,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/06/21/%E5%8F%82%E8%80%83%E7%AC%94%E8%AE%B0/">
+                <a href="/2022/05/01/vue%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98(1)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="学习react之前需要先掌握什么技能？">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="vue前端高频面试题（1）？">
                         
-                        <span class="card-title">学习react之前需要先掌握什么技能？</span>
+                        <span class="card-title">vue前端高频面试题（1）？</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -758,7 +797,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-01
                             </span>
                         <span class="publish-author">
                             
@@ -768,6 +807,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
