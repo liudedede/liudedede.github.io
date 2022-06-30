@@ -504,6 +504,13 @@
 <p>vue.js则是采用数据劫持结合发布者订阅者模式的方式</p>
 <p>通过Object.defineProperty()来劫持各个属性的setter，getter，</p>
 <p>在数据变动时发布消息给订阅者，触发相应的监听回调。</p>
+<h3 id="Object-defineProperty-方法的作用是什么？"><a href="#Object-defineProperty-方法的作用是什么？" class="headerlink" title="Object.defineProperty()方法的作用是什么？"></a>Object.defineProperty()方法的作用是什么？</h3><p>Object.defineProperty()方法 会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性，并返回这个对象。<br>语法格式:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object.defineProperty(obj, prop, descriptor)</span><br></pre></td></tr></table></figure>
+<p>参数说明:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">obj:必须。目标对象</span><br><span class="line">prop:必须。需要定义或者修改的属性的名字</span><br><span class="line">descriptor:必须。目标属性所拥有的特性</span><br></pre></td></tr></table></figure>
+<p>返回值:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">传入函数的对象。即第一个参数obj</span><br></pre></td></tr></table></figure>
+<p>针对属性，我们可以给这个属性设置一些特性，比如是否只读不可以写；是否可以被for..in或Object.keys()便利<br>给对象的属性添加特性描述，目前提供两种形式: 数据描述和存储器描述。</p>
 
                 
             </div>
