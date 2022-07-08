@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Hexo</title>
+  <title>解决hexo部署报错问题 | Hexo</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -400,14 +400,14 @@
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        
+        解决hexo部署报错问题
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2022-07-03 |
+          <i class="fas fa-calendar"></i> Published in：2022-06-13 |
         </span>
       
 
@@ -431,10 +431,13 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h3 id="什么是高阶函数？"><a href="#什么是高阶函数？" class="headerlink" title="什么是高阶函数？"></a>什么是高阶函数？</h3><p>一种是以函数形式作为函数的参数，叫做高阶函数，比如promise，filter，forEach，等等。</p>
-<p>一中以函数形式返回的函数，也是高阶函数。</p>
-<hr>
-<h3 id="函数柯里化？"><a href="#函数柯里化？" class="headerlink" title="函数柯里化？"></a>函数柯里化？</h3><p><img src="D:/myBlog/source/images/函数柯里化.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/函数柯里化.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
+        <h3 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">##进入站点根目录</span><br><span class="line">cd /usr/local/src/hexo/hanyubolg/</span><br><span class="line"></span><br><span class="line">##删除git提交内容文件夹</span><br><span class="line">rm -rf .deploy_git/</span><br><span class="line"></span><br><span class="line">##执行</span><br><span class="line">git config --global core.autocrlf false</span><br><span class="line"></span><br><span class="line">##最后</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">##进入站点根目录</span><br><span class="line">cd /usr/local/src/hexo/hanyubolg/</span><br><span class="line"></span><br><span class="line">##删除git提交内容文件夹</span><br><span class="line">vim _config.yml</span><br><span class="line"></span><br><span class="line">##修改</span><br><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">type: git</span><br><span class="line"></span><br><span class="line">repo: https://github.com/yourname/yourname.github.io.git -&gt; git@github.com:a956551943/weixiaohui.github.io.git</span><br><span class="line"></span><br><span class="line">branch: master</span><br><span class="line"></span><br><span class="line">##最后</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="第三种-不推荐"><a href="#第三种-不推荐" class="headerlink" title="第三种 不推荐"></a>第三种 不推荐</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">##进入站点根目录</span><br><span class="line">cd /usr/local/src/hexo/hanyubolg/</span><br><span class="line"></span><br><span class="line">##进入depoly文件夹</span><br><span class="line">cd .deploy_git/</span><br><span class="line"></span><br><span class="line">##强制推送</span><br><span class="line">git push -f</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>谢谢惠顾</p>
 
       </div>
       <div class="post-tags-categories">
@@ -448,7 +451,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/2022/07/03/高阶函数以及函数柯里化/" target="_blank" title="">http://example.com/2022/07/03/高阶函数以及函数柯里化/</a>
+    <a href="/2022/06/13/解决hexo部署报错问题/" target="_blank" title="解决hexo部署报错问题">http://example.com/2022/06/13/解决hexo部署报错问题/</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -470,18 +473,16 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/1.jpg" class="lazyload placeholder" data-srcset="/medias/1.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/6.jpg" class="lazyload placeholder" data-srcset="/medias/6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
     </div>
-    <a href="/2022/07/03/react%E5%A3%B0%E6%98%8E%E5%91%A8%E6%9C%9F(%E6%97%A7)/" class="post-nav-link">
+    <a href="/2022/06/22/react%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8Cjsx%E8%AF%AD%E6%B3%95/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text"></div>
+        <div class="title-text">react开始</div>
       </div>
       
       <!-- <div class="content">
-        
-生命周期有三个阶段：分别为 装载阶段  更新阶段  卸载阶段
-
+        ———react 框架———-react是什么？1、React是用于构建用户界面的JavaScript库，起源于Face
       </div> -->
     </a>
   </div>
@@ -492,15 +493,16 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/1.jpg" class="lazyload placeholder" data-srcset="/medias/1.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/10.jpg" class="lazyload placeholder" data-srcset="/medias/10.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
     </div>
-    <a href="/2022/06/27/%E8%A7%A3%E5%86%B3hexo%E9%83%A8%E7%BD%B2%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/" class="post-nav-link">
+    <a href="/2022/06/12/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E4%BB%A5%E5%8F%8A%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text"></div>
+        <div class="title-text">高阶函数以及函数柯里化使用</div>
       </div>
       <!-- <div class="content">
-        第一种1234567891011##进入站点根目录cd /usr/local/src/hexo/hanyubolg/##
+        什么是高阶函数？一种是以函数形式作为函数的参数，叫做高阶函数，比如promise，filter，forEach，等等。
+
       </div> -->
     </a>
   </div>
