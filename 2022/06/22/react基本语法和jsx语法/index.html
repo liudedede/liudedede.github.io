@@ -437,6 +437,20 @@
 <h3 id="虚拟dom特点"><a href="#虚拟dom特点" class="headerlink" title="虚拟dom特点"></a>虚拟dom特点</h3><p>渲染速度快，进行虚拟dom树，变化前后对比，将不同的数据对象进行真实dom渲染，虚拟dom就是一个对象，比真实dom更加轻量级，效率更高。</p>
 <h3 id="虚拟dom两种创建方式"><a href="#虚拟dom两种创建方式" class="headerlink" title="虚拟dom两种创建方式"></a>虚拟dom两种创建方式</h3><h5 id="第一种：jsx语法创建虚拟dom（推荐）"><a href="#第一种：jsx语法创建虚拟dom（推荐）" class="headerlink" title="第一种：jsx语法创建虚拟dom（推荐）"></a>第一种：jsx语法创建虚拟dom（推荐）</h5><p><img src="D:/myBlog/source/images/虚拟dom.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/虚拟dom.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="sfd"></p>
 <h5 id="第二种：使用官方api创建虚拟dom"><a href="#第二种：使用官方api创建虚拟dom" class="headerlink" title="第二种：使用官方api创建虚拟dom"></a>第二种：使用官方api创建虚拟dom</h5><p><img src="D:/myBlog/source/images/react引入虚拟dom.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/react引入虚拟dom.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="sdf"><br><img src="D:/myBlog/source/images/helloworld.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/helloworld.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="sdf"></p>
+<h3 id="jsx语法-javascript-XML"><a href="#jsx语法-javascript-XML" class="headerlink" title="jsx语法,(javascript+XML)?"></a>jsx语法,(javascript+XML)?</h3><p><code>JSX</code>是一种<code>JavaScript</code>的语法扩展，运用于React架构中，其格式比较像是模版语言，但事实上完全是在<code>JavaScript</code>内部实现的。元素是构成<code>React</code>应用的最小单位，JSX就是用来声明React当中的元素，React使用JSX来描述用户界面。</p>
+<p>jsx语法规则：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1.定义虚拟DOM时，不要写引号。</span><br><span class="line">2.标签中混入JS表达式时要用&#123;&#125;。</span><br><span class="line">3.样式的类名指定不要用class，要用className。</span><br><span class="line">4.内联样式，要用style=&#123;&#123;key:value&#125;&#125;的形式去写。</span><br><span class="line">5.只有一个根标签</span><br><span class="line">6.标签必须闭合</span><br><span class="line">7.标签首字母</span><br><span class="line">(1).若小写字母开头，则将该标签转为html中同名元素，若html中无该标签对应的同名元素，则报错。</span><br><span class="line">(2).若大写字母开头，react就去渲染对应的组件，若组件没有定义，则报错。</span><br></pre></td></tr></table></figure>
+
+<p>一定注意区分：【js语句(代码)】与【js表达式】<br>1.表达式：一个表达式会产生一个值，可以放在任何一个需要值的地方<br>下面这些都是表达式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(1). a</span><br><span class="line">(2). a+b</span><br><span class="line">(3). demo(1)</span><br><span class="line">(4). arr.map() </span><br><span class="line">(5). function test () &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.语句(代码)：<br>下面这些都是语句(代码)：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(1).if()&#123;&#125;</span><br><span class="line">(2).for()&#123;&#125;</span><br><span class="line">(3).switch()&#123;case:xxxx&#125;    </span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="react类组件的创建"><a href="#react类组件的创建" class="headerlink" title="react类组件的创建?"></a>react类组件的创建?</h3><p>类组件也叫有状态组件（state）<br>state,数据对应的setState更新试图方法<br>setState第一个参数为想要更新的state属性<br>setState是一个异步方法，想要有同步处理，在第二个参数回调中操作</p>
+<h3 id="事件绑定？"><a href="#事件绑定？" class="headerlink" title="事件绑定？"></a>事件绑定？</h3><p>&lt; button onClick&#x3D;{回调函数} &gt;加&lt; &#x2F;button &gt;  驼峰命名<br>改变this指向错误的方式：<br>1、通过this.add &#x3D; this.add.bind(this)<br>2、箭头函数onClick&#x3D;{()&#x3D;&gt;{}}<br>3、将方法写成箭头函数的形式</p>
 
       </div>
       <div class="post-tags-categories">
