@@ -459,6 +459,21 @@
 <p>传递参数简写方式：{…obj}可以将对象全部key，value进行展开传递到子组件中</p>
 <h3 id="props类型校验"><a href="#props类型校验" class="headerlink" title="props类型校验"></a>props类型校验</h3><p>react会检查函数组件和类组件静态属性propTypes属性，如果有这个属性，那么会进行类型校验，如果没有那么不做类型判断,react会检查函数组件和类组件静态属性defaultProps属性，如果有这个属性，那么会设置props默认值.<br><img src="D:/myBlog/source/images/props类型校验.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/props类型校验.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="props类型校验"></p>
 <h3 id="react子传父"><a href="#react子传父" class="headerlink" title="react子传父"></a>react子传父</h3><p><img src="D:/myBlog/source/images/子传父.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/子传父.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
+<h3 id="react获取子组件中所有方法和属性"><a href="#react获取子组件中所有方法和属性" class="headerlink" title="react获取子组件中所有方法和属性"></a>react获取子组件中所有方法和属性</h3><p><img src="D:/myBlog/source/images/获取子组件所有方法和属性.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/获取子组件所有方法和属性.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="image-20220703152755088"></p>
+<h2 id="react三大核心属性之-ref"><a href="#react三大核心属性之-ref" class="headerlink" title="react三大核心属性之-ref"></a>react三大核心属性之-ref</h2><h3 id="ref的使用方式："><a href="#ref的使用方式：" class="headerlink" title="ref的使用方式："></a>ref的使用方式：</h3><p>1.通过绑定ref，值为字符串，获取dom元素,this.refs.input</p>
+<p>2.通过ref绑定一个回调函数形式，形参就是当前的dom对象</p>
+<p>3.通过React.createRef()创建一个ref对象，进行ref绑定</p>
+<p>示例：ref&#x3D;{this.refDom}</p>
+<h3 id="什么是受控组件？什么是非受控组件？"><a href="#什么是受控组件？什么是非受控组件？" class="headerlink" title="什么是受控组件？什么是非受控组件？"></a>什么是受控组件？什么是非受控组件？</h3><p>受控组件就是使用state进行控制的属性，比如this.state.属性</p>
+<p>非受控组件就是不受state控制的组件，直接this就可以找到</p>
+<h3 id="react中条件判断"><a href="#react中条件判断" class="headerlink" title="react中条件判断"></a>react中条件判断</h3><p>方式1：通过style的display属性进行元素显隐</p>
+<p><img src="D:/myBlog/source/images/元素显隐1.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/元素显隐1.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
+<p>方式2：通过三元运算符进行元素显隐</p>
+<p><img src="D:/myBlog/source/images/元素显隐2.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/元素显隐2.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
+<p>方式3：通过短路逻辑进行元素显隐&amp;&amp;</p>
+<p><img src="D:/myBlog/source/images/元素显隐3.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/元素显隐3.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
+<p>方式4：通过函数形式进行元素显隐（switch循环）</p>
+<p><img src="D:/myBlog/source/images/元素显隐4.png" class="lazyload placeholder" data-srcset="D:/myBlog/source/images/元素显隐4.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
 
       </div>
       <div class="post-tags-categories">
