@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>vue前端高频面试题（1）？ | Hexo</title>
+  <title>es6面试题(5) | Hexo</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -393,21 +393,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/4.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/8.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        vue前端高频面试题（1）？
+        es6面试题(5)
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2022-05-01 |
+          <i class="fas fa-calendar"></i> Published in：2021-09-10 |
         </span>
       
 
@@ -431,53 +431,10 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h3 id="三种开发模式？"><a href="#三种开发模式？" class="headerlink" title="三种开发模式？"></a>三种开发模式？</h3><h4 id="mvc-mvp-mvvm模式"><a href="#mvc-mvp-mvvm模式" class="headerlink" title="mvc mvp mvvm模式"></a>mvc mvp mvvm模式</h4><p><strong>mvc</strong>是应用最广泛的软件架构之一，mvc分为Model（模型）、Controller（控制器）、View（视图）</p>
-<p>这主要就是基于分层的目的，让彼此的职责分开。View一般通过controller来和Model进行练习。</p>
-<p>controller是Model和view的协调者，View和Model不直接联系。基本练习都是单向的。</p>
-<p><img src="/../images/image-20220628083139353.png" class="lazyload placeholder" data-srcset="/../images/image-20220628083139353.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="image-20220628083139353"></p>
-<h5 id="工作流程："><a href="#工作流程：" class="headerlink" title="工作流程："></a>工作流程：</h5><p>View传送指令到Controller</p>
-<p>Controller完成业务逻辑后，要求Model改变状态</p>
-<p>Model将新的数据发送到View，用户得到反馈</p>
-<hr>
-<p><strong>Mvp</strong>模式将Controller改成了Presenter，同时也改变了通信方向。</p>
-<p><img src="/../images/image-20220628083546243.png" class="lazyload placeholder" data-srcset="/../images/image-20220628083546243.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="image-20220628083546243"></p>
-<h5 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h5><p>MVVM是把MVC的Controller和MVP的Presenter改成了ViewModel。</p>
-<p>MVVM的开发模式也是我们vue使用的开发模式。</p>
-<p>view的变化自动更新到viewModel，viewModel的变化会自动融不到view上显示。这种自动同步是因为viewModel中的属性实现了Observer，当属性变更时都能触发对应的操作。</p>
-<p><img src="/../images/image-20220628083827320.png" class="lazyload placeholder" data-srcset="/../images/image-20220628083827320.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="image-mvvm"></p>
-<h3 id="MVVM模式的优点以及与MVC模式的区别？"><a href="#MVVM模式的优点以及与MVC模式的区别？" class="headerlink" title="MVVM模式的优点以及与MVC模式的区别？"></a>MVVM模式的优点以及与MVC模式的区别？</h3><h5 id="首先先来说一下MVVM模式的优点："><a href="#首先先来说一下MVVM模式的优点：" class="headerlink" title="首先先来说一下MVVM模式的优点："></a>首先先来说一下MVVM模式的优点：</h5><p>1）低耦合</p>
-<p>2）可重用性</p>
-<p>3）独立开发</p>
-<p>4）可测试</p>
-<h5 id="MVVM和MVC的区别："><a href="#MVVM和MVC的区别：" class="headerlink" title="MVVM和MVC的区别："></a>MVVM和MVC的区别：</h5><p>他俩的区别其实并不大，都是一种设计思想</p>
-<p>他俩的主要区别在于</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mvc中的Controller演变成了mvvm中的viewModel</span><br><span class="line">mvvm通过数据显示视图层而不是节点操作</span><br><span class="line">mvvm主要解决了：mvc中大量的DOM操作使用页面渲染性能降低，加载速度慢，影响用户体验</span><br></pre></td></tr></table></figure>
-
-<h3 id="常见的实现MVVM数据绑定的做法有哪些？"><a href="#常见的实现MVVM数据绑定的做法有哪些？" class="headerlink" title="常见的实现MVVM数据绑定的做法有哪些？"></a>常见的实现MVVM数据绑定的做法有哪些？</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">发布者-订阅者模式（backbone.js）</span><br><span class="line">脏值检查（angular.js）</span><br><span class="line">数据戒指（vue.js）</span><br></pre></td></tr></table></figure>
-
-<p><strong>发布者-订阅者模式：</strong></p>
-<p>一般通过sub，pub的方式实现数据和视图的绑定监听</p>
-<p>更新数据的通常做法是vm.set(‘property’, value)</p>
-<p>这种方式现在毕竟太low了，我们更希望通过vm.property&#x3D;value，对象的形式来更新数据，同时还自动更新视图，于是就有了下面两种方式。</p>
-<hr>
-<p><strong>脏值检查：</strong></p>
-<p>angular.js是通过脏值检测的方式比对数据是否有变更，来决定是否更新视图。</p>
-<p>最简单的方式就是通过setinterval（）定时器定时轮询检测数据的变动，</p>
-<p>angular只有在置顶的事件触发时进入脏值检测，大致如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1、DOM事件，比如用户输入文本，点击按钮等</span><br><span class="line">2、XHR响应事件</span><br><span class="line">3、浏览器Location变更事件</span><br><span class="line">3、Timer事件（定时器）</span><br><span class="line">执行 $digest() 或 $apply()</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>数据劫持：</strong></p>
-<p>vue.js则是采用数据劫持结合发布者订阅者模式的方式</p>
-<p>通过Object.defineProperty()来劫持各个属性的setter，getter，</p>
-<p>在数据变动时发布消息给订阅者，触发相应的监听回调。</p>
-<h3 id="Object-defineProperty-方法的作用是什么？"><a href="#Object-defineProperty-方法的作用是什么？" class="headerlink" title="Object.defineProperty()方法的作用是什么？"></a>Object.defineProperty()方法的作用是什么？</h3><p>Object.defineProperty()方法 会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性，并返回这个对象。<br>语法格式:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object.defineProperty(obj, prop, descriptor)</span><br></pre></td></tr></table></figure>
-<p>参数说明:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">obj:必须。目标对象</span><br><span class="line">prop:必须。需要定义或者修改的属性的名字</span><br><span class="line">descriptor:必须。目标属性所拥有的特性</span><br></pre></td></tr></table></figure>
-<p>返回值:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">传入函数的对象。即第一个参数obj</span><br></pre></td></tr></table></figure>
-<p>针对属性，我们可以给这个属性设置一些特性，比如是否只读不可以写；是否可以被for..in或Object.keys()便利<br>给对象的属性添加特性描述，目前提供两种形式: 数据描述和存储器描述。</p>
+        <h3 id="Proxy是什么，有什么作用"><a href="#Proxy是什么，有什么作用" class="headerlink" title="Proxy是什么，有什么作用?"></a>Proxy是什么，有什么作用?</h3><p>Proxy是ES6新增的一个构造函数，可以理解为JS语言的一个代理，用来改变JS默认的一些语言行为，包括拦截默认的get&#x2F;set方法，使得JS的使用自由度更高，可以最大限度的满足开发者的需求。比如通过拦截对象的get&#x2F;set方法，可以轻松定制自己想要的key或者value。</p>
+<h3 id="Class，-extends是什么，有什么作用？"><a href="#Class，-extends是什么，有什么作用？" class="headerlink" title="Class， extends是什么，有什么作用？"></a>Class， extends是什么，有什么作用？</h3><p>es6的class可以看作只是一个es5生成实例对象的构造函数的语法糖。它参考了java语言，定义了一个类的概念，让对象原型写法更加清晰，对象实例化更像是一种面向对象编程。Class类可以通过extends实现继承。</p>
+<h3 id="常用前端代码开发种，有哪些值得用es6去改进的编程优化或规范？"><a href="#常用前端代码开发种，有哪些值得用es6去改进的编程优化或规范？" class="headerlink" title="常用前端代码开发种，有哪些值得用es6去改进的编程优化或规范？"></a>常用前端代码开发种，有哪些值得用es6去改进的编程优化或规范？</h3><p>常用箭头函数来取代var self &#x3D; this的做法<br>常用let取代var<br>常用数组对象的解构赋值来命名变量，结构更清晰，予语义更明确，可读性更好<br>常用模板字符串替代用+号作字符串拼接<br>用class类取代传统构造函数<br>在大型应用开发中，要保持module模块发开发思维，分清模块之间的关系，常用import和export方法。</p>
+<h3 id="什么是Babel？"><a href="#什么是Babel？" class="headerlink" title="什么是Babel？"></a>什么是Babel？</h3><p>Babel是一个js的编译器，自带一组ES6语法转化器，用于转化js代码。<br>这些转化器让开发者提前使用js语法，而不用等浏览器全部兼容<br>babel默认只转换新的js语法，而不转换新的api。</p>
 
       </div>
       <div class="post-tags-categories">
@@ -491,7 +448,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/2022/05/01/vue前端面试题(1)/" target="_blank" title="vue前端高频面试题（1）？">http://example.com/2022/05/01/vue前端面试题(1)/</a>
+    <a href="/2021/09/10/es6面试题(5)/" target="_blank" title="es6面试题(5)">http://example.com/2021/09/10/es6面试题(5)/</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -513,18 +470,16 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/6.jpg" class="lazyload placeholder" data-srcset="/medias/6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
     </div>
-    <a href="/2022/06/11/react%E5%A3%B0%E5%91%BD%E5%91%A8%E6%9C%9F(%E6%97%A7)/" class="post-nav-link">
+    <a href="/2022/05/01/vue%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98(1)/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text">react生命周期（旧版本）</div>
+        <div class="title-text">vue前端高频面试题（1）？</div>
       </div>
       
       <!-- <div class="content">
-        
-生命周期有三个阶段：分别为 装载阶段  更新阶段  卸载阶段
-
+        三种开发模式？mvc mvp mvvm模式mvc是应用最广泛的软件架构之一，mvc分为Model（模型）、Control
       </div> -->
     </a>
   </div>
@@ -535,15 +490,15 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/8.jpg" class="lazyload placeholder" data-srcset="/medias/8.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/9.jpg" class="lazyload placeholder" data-srcset="/medias/9.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
     </div>
-    <a href="/2021/09/10/es6%E9%9D%A2%E8%AF%95%E9%A2%98(5)/" class="post-nav-link">
+    <a href="/2021/09/08/es6%E9%9D%A2%E8%AF%95%E9%A2%98(4)/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text">es6面试题(5)</div>
+        <div class="title-text">es6面试题(4)</div>
       </div>
       <!-- <div class="content">
-        Proxy是什么，有什么作用?Proxy是ES6新增的一个构造函数，可以理解为JS语言的一个代理，用来改变JS默认的一些
+        promise 种 reject 和 catch 处理上有什么区别？reject是用来抛出异常，catch是用来处理异常
       </div> -->
     </a>
   </div>
