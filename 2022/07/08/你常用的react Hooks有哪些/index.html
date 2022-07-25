@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>react基本语法和jsx语法 | Hexo</title>
+  <title>你常用的React Hooks又哪些? | Hexo</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -393,21 +393,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/5.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/3.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        react基本语法和jsx语法
+        你常用的React Hooks又哪些?
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2022-06-22 |
+          <i class="fas fa-calendar"></i> Published in：2022-07-08 |
         </span>
       
 
@@ -431,49 +431,17 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 id="———react-框架———"><a href="#———react-框架———" class="headerlink" title="———react 框架———-"></a>———react 框架———-</h1><h3 id="react是什么？"><a href="#react是什么？" class="headerlink" title="react是什么？"></a>react是什么？</h3><p>1、React是用于构建用户界面的JavaScript库，起源于Facebook(微信的前身)的内部项目，该公司对市场上所有JavaScript MVC框架都不满意，决定自行开发一套，用于架设Instagram的网站。于2013年5月开源。</p>
-<h3 id="react有哪些特点？"><a href="#react有哪些特点？" class="headerlink" title="react有哪些特点？"></a>react有哪些特点？</h3><p>1、灵活：可以与已知的库进行很好的使用<br>2、高效：虚拟dom，react可以使用虚拟dom进行页面刷新<br>3、组件化：复用性强，协同开发效率比较高<br>4、声明范式开发：更方便快捷描述应用<br>5、jsx语法：是javasciript扩展语言</p>
-<h3 id="在html中使用react？"><a href="#在html中使用react？" class="headerlink" title="在html中使用react？"></a>在html中使用react？</h3><p>引入react官方核心库，以及react-dom渲染库，然后就可以在script脚本内部写react组件了。</p>
-<h3 id="虚拟dom特点"><a href="#虚拟dom特点" class="headerlink" title="虚拟dom特点"></a>虚拟dom特点</h3><p>渲染速度快，进行虚拟dom树，变化前后对比，将不同的数据对象进行真实dom渲染，虚拟dom就是一个对象，比真实dom更加轻量级，效率更高。</p>
-<h3 id="虚拟dom两种创建方式"><a href="#虚拟dom两种创建方式" class="headerlink" title="虚拟dom两种创建方式"></a>虚拟dom两种创建方式</h3><h5 id="第一种：jsx语法创建虚拟dom（推荐）"><a href="#第一种：jsx语法创建虚拟dom（推荐）" class="headerlink" title="第一种：jsx语法创建虚拟dom（推荐）"></a>第一种：jsx语法创建虚拟dom（推荐）</h5><p><img src="/../images/%E8%99%9A%E6%8B%9Fdom.png" class="lazyload placeholder" data-srcset="/../images/%E8%99%9A%E6%8B%9Fdom.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="sfd"></p>
-<h5 id="第二种：使用官方api创建虚拟dom"><a href="#第二种：使用官方api创建虚拟dom" class="headerlink" title="第二种：使用官方api创建虚拟dom"></a>第二种：使用官方api创建虚拟dom</h5><p><img src="/../images/react%E5%BC%95%E5%85%A5%E8%99%9A%E6%8B%9Fdom.png" class="lazyload placeholder" data-srcset="/../images/react%E5%BC%95%E5%85%A5%E8%99%9A%E6%8B%9Fdom.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="sdf"><br><img src="/../images/helloworld.png" class="lazyload placeholder" data-srcset="/../images/helloworld.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="sdf"></p>
-<h3 id="jsx语法-javascript-XML"><a href="#jsx语法-javascript-XML" class="headerlink" title="jsx语法,(javascript+XML)?"></a>jsx语法,(javascript+XML)?</h3><p><code>JSX</code>是一种<code>JavaScript</code>的语法扩展，运用于React架构中，其格式比较像是模版语言，但事实上完全是在<code>JavaScript</code>内部实现的。元素是构成<code>React</code>应用的最小单位，JSX就是用来声明React当中的元素，React使用JSX来描述用户界面。</p>
-<p>jsx语法规则：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1.定义虚拟DOM时，不要写引号。</span><br><span class="line">2.标签中混入JS表达式时要用&#123;&#125;。</span><br><span class="line">3.样式的类名指定不要用class，要用className。</span><br><span class="line">4.内联样式，要用style=&#123;&#123;key:value&#125;&#125;的形式去写。</span><br><span class="line">5.只有一个根标签</span><br><span class="line">6.标签必须闭合</span><br><span class="line">7.标签首字母</span><br><span class="line">(1).若小写字母开头，则将该标签转为html中同名元素，若html中无该标签对应的同名元素，则报错。</span><br><span class="line">(2).若大写字母开头，react就去渲染对应的组件，若组件没有定义，则报错。</span><br></pre></td></tr></table></figure>
+        <h3 id="你常用的React-Hooks又哪些"><a href="#你常用的React-Hooks又哪些" class="headerlink" title="你常用的React Hooks又哪些?"></a>你常用的React Hooks又哪些?</h3><p>使用hooks之前需要先引入 ( import {} from ‘react’; )</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;useState,useRef,useEffect,useLayoutEffect,useCallback, useMemo,useReducer, useContext&#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span></span><br></pre></td></tr></table></figure>
+<h4 id="1、useState"><a href="#1、useState" class="headerlink" title="1、useState"></a>1、useState</h4><p>可以使用useState来定义函数组建的状态。使用useState来创建状态<br>接收一个参数作为初始值，返回一个数组，第一个值为状态，第二个值为改变状态的函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> [name, setName] = <span class="title function_">useState</span>(<span class="string">&#x27;函数&#x27;</span>)</span><br><span class="line"><span class="keyword">return</span>(</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;()</span>=&gt;</span>setName(&#x27;张三&#x27;)&#125;&gt;按钮<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span>  <span class="comment">// 点击事件修改name值</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
-<p>一定注意区分：【js语句(代码)】与【js表达式】<br>1.表达式：一个表达式会产生一个值，可以放在任何一个需要值的地方<br>下面这些都是表达式：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(1). a</span><br><span class="line">(2). a+b</span><br><span class="line">(3). demo(1)</span><br><span class="line">(4). arr.map() </span><br><span class="line">(5). function test () &#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>2.语句(代码)：<br>下面这些都是语句(代码)：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(1).if()&#123;&#125;</span><br><span class="line">(2).for()&#123;&#125;</span><br><span class="line">(3).switch()&#123;case:xxxx&#125;    </span><br></pre></td></tr></table></figure>
+<h4 id="2、useRef"><a href="#2、useRef" class="headerlink" title="2、useRef"></a>2、useRef</h4><p>简单来说useRef就是返回一个子元素索引，此索引在整个生命周期中保持不变。作用也就是：长久保存数据。<br>注：保存的对象发生改变，不通知。属性变更不会重新渲染。<br>useRef其实就跟我们常用的ref属性一样，在函数组件中定义useRef，将变量赋值给标签元素的ref属性，然后就可以通过useRef属性.current来获取dom元素。</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> nameRef = <span class="title function_">useRef</span>()</span><br><span class="line"><span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(nameRef.<span class="property">current</span>)  <span class="comment">// 获取input dom</span></span><br><span class="line">&#125;,[])</span><br><span class="line"><span class="keyword">return</span>(</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">input</span> <span class="attr">ref</span>=<span class="string">&#123;nameRef&#125;/</span>&gt;</span></span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
 
-
-<h3 id="react类组件的创建"><a href="#react类组件的创建" class="headerlink" title="react类组件的创建?"></a>react类组件的创建?</h3><p>类组件也叫有状态组件（state）<br>state,数据对应的setState更新试图方法<br>setState第一个参数为想要更新的state属性<br>setState是一个异步方法，想要有同步处理，在第二个参数回调中操作</p>
-<h3 id="事件绑定？"><a href="#事件绑定？" class="headerlink" title="事件绑定？"></a>事件绑定？</h3><p>&lt; button onClick&#x3D;{回调函数} &gt;加&lt; &#x2F;button &gt;  驼峰命名<br>改变this指向错误的方式：<br>1、通过this.add &#x3D; this.add.bind(this)<br>2、箭头函数onClick&#x3D;{()&#x3D;&gt;{}}<br>3、将方法写成箭头函数的形式</p>
-<h3 id="react中循环怎么实现？"><a href="#react中循环怎么实现？" class="headerlink" title="react中循环怎么实现？"></a>react中循环怎么实现？</h3><p><img src="/../images/%E5%BE%AA%E7%8E%AF.png" class="lazyload placeholder" data-srcset="/../images/%E5%BE%AA%E7%8E%AF.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
-<h3 id="key的作用和duff算法"><a href="#key的作用和duff算法" class="headerlink" title="key的作用和duff算法?"></a>key的作用和duff算法?</h3><p>key的作用：唯一标识，可以提升性能，避免虚拟dom渲染偷懒产生bug<br>场景：在使用index作为key是，逆向添加数据，产生key变化，造成页面渲染异常<br>推荐：使用id作为唯一标识<br>提升性能：减少不必要的重复渲染</p>
-<p>duff算法：<br>1.虚拟dom对象前后对比，当key值不同时，直接进行真实dom渲染<br>2.虚拟dom对象前后对比，当key值相同时，内容不同时，替换内容渲染真实dom<br>3.key值相同，会进行虚拟dom树层层对比，相同的复用，不同的重新渲染真实dom</p>
-<h2 id="react三大属性之props"><a href="#react三大属性之props" class="headerlink" title="react三大属性之props"></a>react三大属性之props</h2><h3 id="props概念"><a href="#props概念" class="headerlink" title="props概念"></a>props概念</h3><p>组件传值之父传子，通过属性进行绑定值传递参数</p>
-<p>类组件接收props：使用this.props<br>函数组件接收props：使用props形参接收</p>
-<p>传递参数简写方式：{…obj}可以将对象全部key，value进行展开传递到子组件中</p>
-<h3 id="props类型校验"><a href="#props类型校验" class="headerlink" title="props类型校验"></a>props类型校验</h3><p>react会检查函数组件和类组件静态属性propTypes属性，如果有这个属性，那么会进行类型校验，如果没有那么不做类型判断,react会检查函数组件和类组件静态属性defaultProps属性，如果有这个属性，那么会设置props默认值.<br><img src="/../images/props%E7%B1%BB%E5%9E%8B%E6%A0%A1%E9%AA%8C.png" class="lazyload placeholder" data-srcset="/../images/props%E7%B1%BB%E5%9E%8B%E6%A0%A1%E9%AA%8C.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="props类型校验"></p>
-<h3 id="react子传父"><a href="#react子传父" class="headerlink" title="react子传父"></a>react子传父</h3><p><img src="/../images/%E5%AD%90%E4%BC%A0%E7%88%B6.png" class="lazyload placeholder" data-srcset="/../images/%E5%AD%90%E4%BC%A0%E7%88%B6.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
-<h3 id="react获取子组件中所有方法和属性"><a href="#react获取子组件中所有方法和属性" class="headerlink" title="react获取子组件中所有方法和属性"></a>react获取子组件中所有方法和属性</h3><p><img src="/../images/%E8%8E%B7%E5%8F%96%E5%AD%90%E7%BB%84%E4%BB%B6%E6%89%80%E6%9C%89%E6%96%B9%E6%B3%95%E5%92%8C%E5%B1%9E%E6%80%A7.png" class="lazyload placeholder" data-srcset="/../images/%E8%8E%B7%E5%8F%96%E5%AD%90%E7%BB%84%E4%BB%B6%E6%89%80%E6%9C%89%E6%96%B9%E6%B3%95%E5%92%8C%E5%B1%9E%E6%80%A7.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="image-20220703152755088"></p>
-<h2 id="react三大核心属性之-ref"><a href="#react三大核心属性之-ref" class="headerlink" title="react三大核心属性之-ref"></a>react三大核心属性之-ref</h2><h3 id="ref的使用方式："><a href="#ref的使用方式：" class="headerlink" title="ref的使用方式："></a>ref的使用方式：</h3><p>1.通过绑定ref，值为字符串，获取dom元素,this.refs.input</p>
-<p>2.通过ref绑定一个回调函数形式，形参就是当前的dom对象</p>
-<p>3.通过React.createRef()创建一个ref对象，进行ref绑定</p>
-<p>示例：ref&#x3D;{this.refDom}</p>
-<h3 id="什么是受控组件？什么是非受控组件？"><a href="#什么是受控组件？什么是非受控组件？" class="headerlink" title="什么是受控组件？什么是非受控组件？"></a>什么是受控组件？什么是非受控组件？</h3><p>受控组件就是使用state进行控制的属性，比如this.state.属性</p>
-<p>非受控组件就是不受state控制的组件，直接this就可以找到</p>
-<h3 id="react中条件判断"><a href="#react中条件判断" class="headerlink" title="react中条件判断"></a>react中条件判断</h3><p>方式1：通过style的display属性进行元素显隐</p>
-<p><img src="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%901.png" class="lazyload placeholder" data-srcset="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%901.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
-<p>方式2：通过三元运算符进行元素显隐</p>
-<p><img src="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%902.png" class="lazyload placeholder" data-srcset="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%902.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
-<p>方式3：通过短路逻辑进行元素显隐&amp;&amp;</p>
-<p><img src="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%903.png" class="lazyload placeholder" data-srcset="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%903.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
-<p>方式4：通过函数形式进行元素显隐（switch循环）</p>
-<p><img src="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%904.png" class="lazyload placeholder" data-srcset="/../images/%E5%85%83%E7%B4%A0%E6%98%BE%E9%9A%904.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"></p>
+<h4 id="3、useEffect"><a href="#3、useEffect" class="headerlink" title="3、useEffect"></a>3、useEffect</h4><p>官方：useEffect又称副作用hooks。<br>作用：给没有生命周期的组件，添加结束渲染的信号。<br>执行时机：在渲染结束之后执行。<br>什么是副作用？<br>数据获取，数据订阅，以及手动更改React组件中的DOM都属于副作用<br>因为我们渲染出来的页面都是静态的，任何在其之后的操作都会对他产生影响，所以称之为副作用</p>
+<p>自己理解：useEffect其实就相当于类组件中的生命周期，在函数组件中是没有是没有生命周期的，useEffect就代替了函数组件的生命周期。</p>
 
       </div>
       <div class="post-tags-categories">
@@ -487,7 +455,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/2022/06/22/react基本语法和jsx语法/" target="_blank" title="react基本语法和jsx语法">http://example.com/2022/06/22/react基本语法和jsx语法/</a>
+    <a href="/2022/07/08/你常用的react Hooks有哪些/" target="_blank" title="你常用的React Hooks又哪些?">http://example.com/2022/07/08/你常用的react Hooks有哪些/</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -505,39 +473,21 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img" style="background-size: cover; 
-      background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/3.jpg" class="lazyload placeholder" data-srcset="/medias/3.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-    </div>
-    <a href="/2022/07/08/%E4%BD%A0%E5%B8%B8%E7%94%A8%E7%9A%84react%20Hooks%E6%9C%89%E5%93%AA%E4%BA%9B/" class="post-nav-link">
-      <div class="title">
-        <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text">你常用的React Hooks又哪些?</div>
-      </div>
-      
-      <!-- <div class="content">
-        你常用的React Hooks又哪些?使用hooks之前需要先引入 ( import {} from ‘react’; 
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/1.jpg" class="lazyload placeholder" data-srcset="/medias/1.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/5.jpg" class="lazyload placeholder" data-srcset="/medias/5.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
     </div>
-    <a href="/2022/06/13/%E8%A7%A3%E5%86%B3hexo%E9%83%A8%E7%BD%B2%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/" class="post-nav-link">
+    <a href="/2022/06/22/react%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%92%8Cjsx%E8%AF%AD%E6%B3%95/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text">解决hexo部署报错问题</div>
+        <div class="title-text">react基本语法和jsx语法</div>
       </div>
       <!-- <div class="content">
-        第一种1234567891011##进入站点根目录cd /usr/local/src/hexo/hanyubolg/##
+        ———react 框架———-react是什么？1、React是用于构建用户界面的JavaScript库，起源于Face
       </div> -->
     </a>
   </div>
